@@ -1,0 +1,11 @@
+Description:
+    Stubs out a new service. Pass the service name, either
+       CamelCased or under_scored.
+
+       This generates a service class in app/services.
+
+Example:
+    `rails generate service MailerService`
+
+    This will create:
+        app/services/mailer_service.rb
