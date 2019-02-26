@@ -11,7 +11,7 @@ Service objects are Plain Old Ruby Objects (PORO) that are designed to execute o
 
 #### Why
 
-Services has the benefit of concentrating the core logic of the application in a separate object, instead of scattering it around controllers and models.
+Services have the benefit of concentrating the core logic of the application in a separate object, instead of scattering it around controllers and models.
 
 #### How
 

@@ -1,0 +1,11 @@
+Description:
+    Stubs out a new model concern. Pass the concern name, either
+       CamelCased or under_scored.
+
+       This generates a concern module in app/models/concerns.
+
+Example:
+    `rails generate concern Concernable`
+
+    This will create:
+        app/models/concerns/concernable.rb
