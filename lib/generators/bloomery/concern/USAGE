@@ -5,7 +5,7 @@ Description:
        This generates a concern module in app/models/concerns.
 
 Example:
-    `rails generate concern Concernable`
+    `rails generate bloomery:concern Concernable`
 
     This will create:
         app/models/concerns/concernable.rb

@@ -1,0 +1,28 @@
+  respond_to :json
+
+  # TODO: load parent (commentable) resource and comments through parent
+
+  def create
+    if @comment.save
+      render 'comments/show', status: :created
+    else
+      render json: { errors: @comment.errors },
+             status: :unprocessable_entity
+    end
+  end
+
+  def destroy
+    if @comment.destroy
+      head :ok
+    else
+      head :unprocessable_entity
+    end
+  end
+
+  private
+
+  def comment_params
+    # TODO: Add commentator attributes. Commentable attributes should come from
+    # route and cancancan
+    params.require(:comment).permit(:content)
+  end

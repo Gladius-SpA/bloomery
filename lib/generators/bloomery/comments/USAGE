@@ -1,0 +1,12 @@
+Description:
+    Creates Comment model with a polymorphic association to commentable and commentator
+
+       This generates:
+         - Comment model in app/models
+         - Comment migration in db/migrations
+         - Commentator and Commentable concern in app/models/concerns
+         - CommentsController in app/controllers
+         - :commentable concern in app/routes.rb
+
+Example:
+    `rails generate bloomery:comments`

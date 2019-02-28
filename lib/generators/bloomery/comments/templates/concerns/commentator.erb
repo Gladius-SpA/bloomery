@@ -1,0 +1,2 @@
+    has_many :comments, as: :commentator, dependent: :destroy,
+                        inverse_of: :commentator

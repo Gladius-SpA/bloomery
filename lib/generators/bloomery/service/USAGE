@@ -5,7 +5,7 @@ Description:
        This generates a service class in app/services.
 
 Example:
-    `rails generate service MailerService`
+    `rails generate bloomery:service MailerService`
 
     This will create:
         app/services/mailer_service.rb

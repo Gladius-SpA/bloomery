@@ -1,0 +1,4 @@
+  # TODO: Add this concern to every commentable resource
+  concern :commentable do
+    resources :comments, only: %i[create destroy], shallow: true
+  end
